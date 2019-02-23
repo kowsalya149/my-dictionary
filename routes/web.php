@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('form');
 });
+
+Route::resource('form','LoginController');
+
+Route::get('login','LoginController@login');

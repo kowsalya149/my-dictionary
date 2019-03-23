@@ -2,11 +2,14 @@
 <html>
 <body>
 
-<h2>Login </h2>
+<h2>Register </h2>
 	
-<form action="/validateLogin" method="post">
-  Username:<br>
+<form action="/doRegister" method="post">
+  First name:<br>
   <input type="text" name="firstname" />
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" />
   <br>
   Password:<br>
   <input type="password" name="password" />

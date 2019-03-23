@@ -7,13 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Log;
 
 class LoginController extends Controller
-{
-    public function index() {
-		Log::info('Index Page');
-		echo 'index';
-	}
-	
-	public function login() {
+{	
+	public function getLoginView() {
 		return view('login');
 	}
 }

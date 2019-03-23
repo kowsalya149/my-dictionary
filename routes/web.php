@@ -7,7 +7,7 @@
 |
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| contains the "web" middleWare group. Now create something great!
 |
 */
 
@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::resource('index','LoginController');
+Route::get('register','RegisterController@getRegisterView');
 
-Route::get('login','LoginController@login');
+Route::post('doRegister','RegisterController@validateRegister');
+
+Route::get('login','LoginController@getLoginView');
+
+Route::post('validateLogin','ValidationController@validateLogin');
